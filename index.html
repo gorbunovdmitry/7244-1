@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СМС без лишних слов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics и Yandex Metrika будут подключены через analytics.js -->
+    <!-- Замените GA_MEASUREMENT_ID и YANDEX_METRIKA_ID в analytics.js на реальные ID -->
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+        <div class="header-icon">
+            <img src="img/message.png" alt="Message icon" class="message-icon">
+        </div>
+
+        <h1 class="title">СМС без лишних слов</h1>
+        
+        <p class="description">
+            Выберете текст сообщения, который хотите получать при совершении операции
+        </p>
+
+        <div class="sms-templates">
+            <div class="sms-item" data-template="1">
+                <div class="sms-bubble">
+                    <div class="sms-text">
+                        Покупка со счета *1234: 10&nbsp;RUB в&nbsp;Alfastore Баланс: 1234,56p
+                    </div>
+                </div>
+                <div class="checkmark-box">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" fill="black"/>
+                        <path d="M6 10 L9 13 L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sms-item" data-template="2">
+                <div class="sms-bubble">
+                    <div class="sms-text">
+                        Покупка со счета карты *6789: 10&nbsp;RUB в&nbsp;Alfastore Баланс: 1234,56р
+                    </div>
+                </div>
+                <div class="checkmark-box">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" fill="black"/>
+                        <path d="M6 10 L9 13 L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sms-item" data-template="3">
+                <div class="sms-bubble">
+                    <div class="sms-text">
+                        Покупка *1234: 10&nbsp;RUB в&nbsp;Alfastore Баланс: 1234,56p
+                    </div>
+                </div>
+                <div class="checkmark-box">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" fill="black"/>
+                        <path d="M6 10 L9 13 L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sms-item" data-template="4">
+                <div class="sms-bubble">
+                    <div class="sms-text">
+                        Покупка 10&nbsp;RUB в&nbsp;Alfastore Баланс: 1234,56p
+                    </div>
+                </div>
+                <div class="checkmark-box">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="9" fill="black"/>
+                        <path d="M6 10 L9 13 L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <button class="apply-button" id="applyButton">Применить</button>
+        </div>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
